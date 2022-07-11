@@ -44,10 +44,6 @@ Movies Explorer - это интерактивная SPA-страница, на �
 
     npm run start
 
-Запустить сервер с hot-reload:
-
-    npm run dev
-
 ## Языки:
 - JavaScript
 

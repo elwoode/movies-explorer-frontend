@@ -109,6 +109,7 @@
 
 .search__checkbox:checked+.search__slider {
   background-color: white;
+  border: 1px solid #2be080;
 }
 
 .search__checkbox:checked+.search__slider::before {

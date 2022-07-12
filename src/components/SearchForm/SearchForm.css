@@ -41,6 +41,13 @@
   grid-row: 1/2;
 }
 
+.search__input:focus {
+  width: 90%;
+  outline: 1px solid #F9F9F9;
+  border-radius: 9px;
+  background-color: #2be080;
+}
+
 
 .search__button {
   background: url(../../images/button-search.svg) center no-repeat;

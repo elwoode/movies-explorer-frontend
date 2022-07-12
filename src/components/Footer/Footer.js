@@ -24,7 +24,7 @@ const Footer = () => {
               <a className="footer__nav-link" href="https://github.com/elwoode/" target="_blank" rel="noreferrer">Github</a>
             </li>
             <li className="footer__nav-item">
-              <a className="footer__nav-link" href="https://www.facebook.com/elwoode/" target="_blank" rel="noreferrer">Facebook</a>
+              <a className="footer__nav-link" href="https://vk.com/elwoode" target="_blank" rel="noreferrer">Vkontakte</a>
             </li>
           </ul>
         </nav>

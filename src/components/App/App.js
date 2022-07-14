@@ -9,6 +9,7 @@ import Register from '../Register/Register';
 import Login from '../Login/Login';
 import Profile from '../Profile/Profile';
 import PageNotFound from '../PageNotFound/PageNotFound';
+import Index from '../ScrollUpButton/scrollUpButton';
 
 function App() {
   return (
@@ -17,11 +18,13 @@ function App() {
         <Route exact path="/">
           <Header loggedIn={false} />
           <Main />
+          <Index />
           <Footer />
         </Route>
         <Route path="/movies">
           <Header loggedIn={true} />
           <Movies />
+          <Index />
           <Footer />
         </Route>
         <Route exact path="/saved-movies">

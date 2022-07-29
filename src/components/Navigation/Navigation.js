@@ -16,17 +16,19 @@ const Navigation = () => {
             <button className="navigation__btn-close" type="button" onClick={handleToggleMenu}></button>
             <ul className="navigation__list">
               <li className="navigation__list-item navigation__list-item_type_main">
-                <Link to="/" className="navigation__link">Главная</Link>
+                <Link to="/" className="navigation__link" onClick={handleToggleMenu}>Главная</Link>
               </li>
               <li className="navigation__list-item">
-                <NavLink to="/movies" className="navigation__link" activeClassName="navigation__link_active">Фильмы</NavLink>
+                <NavLink to="/movies" className="navigation__link"
+                  activeClassName="navigation__link_active" onClick={handleToggleMenu}>Фильмы</NavLink>
               </li>
               <li className="navigation__list-item">
-                <NavLink to="/saved-movies" className="navigation__link" activeClassName="navigation__link_active">Сохранённые фильмы</NavLink>
+                <NavLink to="/saved-movies" className="navigation__link"
+                  activeClassName="navigation__link_active" onClick={handleToggleMenu}>Сохранённые фильмы</NavLink>
               </li>
             </ul>
           </div>
-          <NavLink to="/profile" className="navigation__link navigation__link_type_profile" activeClassName="navigation__link_active">Аккаунт</NavLink>
+          <Link to="/profile" className="navigation__link navigation__link_type_profile" onClick={handleToggleMenu}>Аккаунт</Link>
         </div>
       </div>
     </nav>

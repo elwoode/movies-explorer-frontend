@@ -5,8 +5,7 @@ import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Preloader from '../Preloader/Preloader';
 import moviesApi from '../../utils/MoviesApi';
 import mainApi from '../../utils/MainApi.js';
-import { MOVIES_SERVER_URL } from '../../utils/constans'
-import { addErrorMovies, deleteErrorMovies, searchErrorMovies, messageErrorMovies } from '../../utils/constans';
+import { addErrorMovies, deleteErrorMovies, searchErrorMovies, messageErrorMovies, MOVIES_SERVER_URL } from '../../utils/constans'
 
 const Movies = ({ openPopup }) => {
   const [films, setFilms] = useState(null);
@@ -117,7 +116,7 @@ const Movies = ({ openPopup }) => {
     if (favorite) {
       const objFilm = {
         image: MOVIES_SERVER_URL + film.image.url,
-        trailerLink: film.trailerLink,
+        trailer: film.trailerLink,
         thumbnail: MOVIES_SERVER_URL + film.image.url,
         movieId: film.id,
         country: film.country || 'Неизвестно',
@@ -179,13 +178,11 @@ const Movies = ({ openPopup }) => {
 
   return (
     <div className="movies">
-      <SearchForm handleGetMovies={handleGetMovies} filmsTumbler={filmsTumbler}
-        filmsInputSearch={filmsInputSearch} handleGetMoviesTumbler={handleGetMoviesTumbler} />
+      <SearchForm handleGetMovies={handleGetMovies} filmsTumbler={filmsTumbler} filmsInputSearch={filmsInputSearch} handleGetMoviesTumbler={handleGetMoviesTumbler} />
       {preloader && <Preloader />}
       {errorText && <div className="movies__text-error">{errorText}</div>}
       {!preloader && !errorText && films !== null && filmsSaved !== null && filmsShowed !== null && (
-        <MoviesCardList handleMore={handleMore} filmsRemains={films}
-          films={filmsShowed} savedMoviesToggle={savedMoviesToggle} filmsSaved={filmsSaved} />
+        <MoviesCardList handleMore={handleMore} filmsRemains={films} films={filmsShowed} savedMoviesToggle={savedMoviesToggle} filmsSaved={filmsSaved} />
       )}
     </div>
   );

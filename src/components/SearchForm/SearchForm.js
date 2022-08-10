@@ -11,7 +11,7 @@ const SearchForm = ({ handleGetMovies, filmsTumbler, filmsInputSearch, handleGet
 
   function handleTumblerChange(evt) {
     const newTumbler = !tumbler;
-    setTumbler(newTumbler);
+    setTumbler(tumbler);
     handleGetMoviesTumbler(newTumbler);
   }
 

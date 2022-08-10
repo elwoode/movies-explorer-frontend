@@ -34,7 +34,7 @@ const Movies = ({ openPopup }) => {
     let countCards;
     const clientWidth = document.documentElement.clientWidth;
     const MoviesCountConfig = {
-      '1200': [12, 4],
+      '1200': [12, 3],
       '900': [9, 3],
       '768': [8, 2],
       '240': [5, 2],
@@ -107,8 +107,6 @@ const Movies = ({ openPopup }) => {
       filterData = filmsWithTumbler;
     }
 
-    localStorage.setItem('films', JSON.stringify(filterDataShowed.concat(filterData)));
-    localStorage.setItem('filmsTumbler', tumbler);
     setFilmsShowed(filterDataShowed);
     setFilms(filterData);
   }

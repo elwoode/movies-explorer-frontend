@@ -24,7 +24,7 @@ const MoviesCardList = ({ films, savedMoviesToggle, filmsSaved, filmsRemains, ha
 
       {filmsRemains.length > 0 && pathname !== '/saved-movies' && (
         <div className="cards__button-container">
-          <button className="cards__button" type="button" name="more" onClick={handleMore}>Ещё</button>
+          <button className='cards__button' type="button" name="more" onClick={handleMore}>Ещё</button>
         </div>
       )}
     </section>
@@ -32,3 +32,4 @@ const MoviesCardList = ({ films, savedMoviesToggle, filmsSaved, filmsRemains, ha
 };
 
 export default MoviesCardList;
+

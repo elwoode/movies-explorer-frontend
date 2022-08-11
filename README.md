@@ -50,6 +50,9 @@ Movies Explorer - это интерактивная SPA-страница, на �
 ## Библиотеки:
 - ReactJS
 
+ Вход в Личный кабинет
+- Логин: test@mai.ru
+- Пароль:test1234
 # Ссылки:
 - Frontend: https://Dumanaev.nomoredomains.xyz
 - Backend: 
@@ -57,3 +60,5 @@ Movies Explorer - это интерактивная SPA-страница, на �
   - Website: https://api.dumanaev.nomoredomains.xyz
 
 IP: 62.84.122.77
+
+## git pull request: https://github.com/elwoode/movies-explorer-frontend/pull/2

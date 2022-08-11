@@ -1,0 +1,11 @@
+export const addErrorMovies = 'Во время добавления фильма произошла ошибка.';
+export const deleteErrorMovies = 'Во время удаления фильма произошла ошибка.';
+export const searchErrorMovies = 'Нужно ввести ключевое слово';
+export const messageErrorMovies = 'Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз';
+export const severError = 'Что-то пошло не так! Ошибка сервера';
+export const validationEmailErrorMessage = 'Некорректый адрес почты';
+export const registerUserSuccessful = 'Вы успешно зарегистрировались!';
+export const registerUserError = 'Что - то пошло не так! Ошибка регистрации';
+export const authError = 'Что-то пошло не так! Ошибка авторизации.';
+export const MOVIES_SERVER_URL = 'https://api.nomoreparties.co';
+export const MAIN_API_URL = 'https://api.dumanaev.nomoredomains.xyz'

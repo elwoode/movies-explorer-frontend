@@ -81,25 +81,35 @@
 }
 
 .search__tumbler {
+  display: flex;
+  align-self: center;
   position: relative;
   display: inline-block;
   width: 36px;
   height: 20px;
-  filter: drop-shadow(0 2px 2px white);
-  cursor: pointer;
+
 }
 
 .search__checkbox {
-  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .search__slider {
   position: absolute;
-  inset: 0;
-  background-color: #2be080;
-  border-radius: 16px;
-  transition: .6s;
-  transform: scale(-1, -1);
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 36px;
+  padding: 6px;
+  box-shadow: 0 2px 2px 1px #a0a0a0;
+  display: block;
 }
 
 .search__slider::before {
@@ -107,21 +117,24 @@
   content: '';
   height: 16px;
   width: 16px;
-  left: 1px;
-  bottom: 1px;
-  border: 1px solid #2be080;
+  left: 3px;
+  top: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 50%;
-  background-color: white;
+  transition: background-color .3s;
 }
 
 .search__checkbox:checked+.search__slider {
-  background-color: white;
+  background-color: #2be080;
   border: 1px solid #2be080;
 }
 
 .search__checkbox:checked+.search__slider::before {
   transform: translateX(16px);
-  background-color: #2be080;
+  background-color: #fff;
 }
 
 .search__films {
